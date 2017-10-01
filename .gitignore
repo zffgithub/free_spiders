@@ -4,3 +4,4 @@
 .env/*
 db/mysqldb.py
 test.py
+.idea/*
