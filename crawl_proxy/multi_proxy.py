@@ -27,12 +27,12 @@ class MultiTask(object):
                     t = threading.Thread(target=self.task, args=(1,))
                 if self.set_dae:
                     t.setDaemon(True)
-                time.sleep(0.1)
+                #time.sleep(0.1)
                 t.start()
                 print 'Active thread count =', threading.activeCount()
             except Exception as e:
                 print e
-                continue
+                #continue
 
 
 if __name__ == "__main__":
